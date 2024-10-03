@@ -87,30 +87,3 @@ function remove(string $find_id, string $path)
 
     file_put_contents($path, json_encode($users));
 }
-
-/*
-function remove(string $find_id, string $path)
-{
-    $find = [];
-    //find all data
-    $users = json_decode(file_get_contents($path), true);
-
-    $find['all_data'] = $users;
-
-    foreach ($users as $key => $single_user) {
-        if ($single_user['id'] ==  $find_id) {
-            unset($users[$key]);
-            $success = "done";
-            $find['success'] = $success;
-        } else {
-            $success = "not done";
-            $find['success'] = $success;
-        }
-    }
-
-    $find['porer_data'] = $users;
-    file_put_contents($path, json_encode($users));
-
-    return $find;
-}
-**/
