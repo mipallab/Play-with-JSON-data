@@ -63,6 +63,7 @@ function update(array $replaceArr, string $find_id, string $path)
     foreach ($users as $key => $single_user) {
         if ($single_user['id'] ==  $find_id) {
             $users[$key] = $replaceArr;
+            break;
         }
     }
 
@@ -82,6 +83,7 @@ function remove(string $find_id, string $path)
     foreach ($users as $key => $remove_user) {
         if ($remove_user['id'] ==  $find_id) {
             unset($users[$key]);
+            break;
         }
     }
 
