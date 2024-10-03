@@ -1,0 +1,20 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tb-photo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.pro-img img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    object-fit: cover; 
+    border-radius: 50%;
+    outline: #ccc solid 2px;
+}
